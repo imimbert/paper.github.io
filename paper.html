@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @font-face{
+        font-family: 'RiBenHuaYuanMingChaoTi-2';
+        src: url('./RiBenHuaYuanMingChaoTi-2.ttf');
+        }
+        body {
+        font-family:  'RiBenHuaYuanMingChaoTi-2';
+        }
+    </style>
+</head>
+    <body>
+    <div style="width: 430px; height: 932px; background-color: white;">
+        <div style="width: 430px; height: 932px; background-image: linear-gradient(0deg, rgba(255, 241, 235, 1), rgba(172, 224, 249, 1)); border-radius: 8px; position: relative;">
+            <p style="left: 134px; top: 7px; position: absolute; font-size: 72px; line-height: 74px; color: black;">纸 条</p>
+            <p style="left: 150px; top: 138px; position: absolute; font-size: 18px; line-height: 19px; color: black;">A piece of paper</p>
+            <p style="left: 97px; top: 876px; position: absolute; font-size: 18px; line-height: 19px; color: black;">©Deversun  2023 By Roy</p>
+            <div style="width: 311px; height: 600px; left: 60px; top: 190px; position: absolute; background-image: linear-gradient(100deg, white, rgba(255, 255, 255, 0)); border-radius: 8px;"></div>
+            <p style="width: 262px; height: 600px; left: 80px; top: 195px; position: absolute; font-size: 20px; line-height: 21px; background: linear-gradient(90deg, black, rgba(0, 0, 0, 0)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" id="content"></p>
+        </div>
+    </div>
+    <script>
+        content = document.getElementById("content");
+        var name=decodeURI(document.URL);
+        name = name.slice(name.indexOf("=")+1);
+        // alert(name);
+        content.innerText=name;
+    </script>
+    </body>
+</html>
